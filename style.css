@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr .3fr .3fr .3fr 1.5fr 1fr .5fr ;
+    height: 100vh;
+    grid-template-areas: 
+    "one one one one"
+    "two two three three"
+    "four four five five"
+    "six six seven seven"
+    "three-div three-div three-div three-div"
+    "four-div four-div four-div four-div"
+    "fifteen fifteen fifteen fifteen";
+    
+}
+.one{
+    grid-area: one;
+    background-color: aqua;
+}
+.two{
+    grid-area: two;
+    background-color: blue;
+}
+.three{
+    grid-area: three;
+    background-color: blueviolet;
+}
+.four{
+    grid-area: four;
+    background-color: brown;
+}
+.five{
+    grid-area: five;
+    background-color: burlywood;
+
+}
+.six{
+    grid-area: six;
+    background-color: cadetblue;
+}
+.seven{
+    grid-area: seven;
+    background-color: chartreuse;
+}
+.three-div{
+    grid-area: three-div;
+}
+.four-div{
+    grid-area: four-div;
+    background-color: cornflowerblue;
+}
+.fifteen{
+    grid-area: fifteen;
+    background-color: darkgreen;
+}
+/*three-div as row*/
+.three-div{
+    display: flex;
+    flex-direction: row;
+}
+.eight{
+    background-color: darkmagenta;
+    width: 33%;
+}
+.nine{
+    background-color: yellowgreen;
+    width: 33%;
+}
+.ten{
+    background-color: pink;
+    width: 33%;
+}
+.four-div{
+    display: flex;
+    flex-direction: row;
+
+}
+.eleven{
+    width: 25%;
+    background-color: tomato;
+}
+.twelve{
+    width: 25%;
+    background-color: gray;
+}
+.thirteen{
+    width: 25%;
+    background-color: tomato;
+}
+.eleven{
+    width: 25%;
+    background-color: tomato;
+}
