@@ -1,52 +1,73 @@
 *{
     padding: 0;
     margin: 0;
-    
+    box-sizing: border-box;
 }
 .container{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 2fr .3fr .3fr .3fr 1.5fr 1fr .5fr ;
     width: 102%;
-    height: 100vh;
+    height: 200vh;
     grid-template-areas: 
-    "one one one one"
-    "two two three three"
-    "four four five five"
-    "six six seven seven"
-    "three-div three-div three-div three-div"
-    "four-div four-div four-div four-div"
-    "fifteen fifteen fifteen fifteen";
+    "one  one"
+    "two three"
+    "four five"
+    "six  seven"
+    "three-div three-div"
+    "four-div four-div"
+    "fifteen fifteen";
     
 }
 .one{
     grid-area: one;
-    background-image: url('C:\Users\user\Documents\GitHub\sunny-leon-\image_folder\image-header.jpg');
+    background-image: url("image-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+    background-position-y: ;
+    height: 40rem;
+    
 }
 .two{
+    height: 25rem;
     grid-area: two;
     background-color: blue;
 }
 .three{
-    grid-area: three;
-    background-color: blueviolet;
+    height: 25rem;
+    background-image: url("image-transform.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
 }
 .four{
+    height: 25rem;
     grid-area: four;
-    background-color: brown;
+    background-image: url("image-stand-out.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 .five{
+    height: 25rem;
     grid-area: five;
     background-color: burlywood;
 
 }
 .six{
+    height: 25rem;
     grid-area: six;
-    background-color: cadetblue;
+    background-image: url("image-graphic-design.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 .seven{
+    height: 25rem;
+    
     grid-area: seven;
-    background-color: chartreuse;
+    background-image: url("image-photography.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 .three-div{
     grid-area: three-div;
@@ -65,37 +86,55 @@
     flex-direction: row;
 }
 .eight{
+    height: 25rem;
     background-color: darkmagenta;
     width: 33.3%;
 }
 .nine{
+    height:25rem;
     background-color: yellowgreen;
     width: 33.3%;
 }
 .ten{
+    height: 25rem;
     background-color: pink;
     width: 33.3%;
 }
 .four-div{
+    height: 25rem;
     display: flex;
     flex-direction: row;
 
 }
 .eleven{
     width: 25%;
-    background-color: tomato;
+    background-image: url("image-gallery-milkbottles.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 .twelve{
     width: 25%;
-    background-color: gray;
+    background-image: url("image-gallery-orange.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 .thirteen{
     width: 25%;
-    background-color: tomato;
+    background-image: url("image-gallery-cone.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
-.eleven{
+.fourteen{
     width: 25%;
-    background-color: tomato;
+    background-image: url("image-gallery-sugar-cubes.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.fifteen{
+    height: 15rem;
+    align-content: center;
+    background-color: rgb(34, 177, 153);
+
 }
 .logo{
     padding-left: 20px;
@@ -113,4 +152,18 @@
     list-style: none;
     padding-left: 30px;
     
+}
+h1{
+    text-align: center;
+    padding-top: 2rem;
+}
+.under{
+    margin-top: 3rem;
+    margin-right: 47%;
+}
+.icons a img{
+    padding-left: 1em;
+    margin-left: 45%;
+    margin-top: 5rem;
+
 }
