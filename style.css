@@ -1,12 +1,13 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    
 }
 .container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 2fr .3fr .3fr .3fr 1.5fr 1fr .5fr ;
+    width: 102%;
     height: 100vh;
     grid-template-areas: 
     "one one one one"
@@ -20,7 +21,7 @@
 }
 .one{
     grid-area: one;
-    background-color: aqua;
+    background-image: url('C:\Users\user\Documents\GitHub\sunny-leon-\image_folder\image-header.jpg');
 }
 .two{
     grid-area: two;
@@ -65,15 +66,15 @@
 }
 .eight{
     background-color: darkmagenta;
-    width: 33%;
+    width: 33.3%;
 }
 .nine{
     background-color: yellowgreen;
-    width: 33%;
+    width: 33.3%;
 }
 .ten{
     background-color: pink;
-    width: 33%;
+    width: 33.3%;
 }
 .four-div{
     display: flex;
@@ -95,4 +96,21 @@
 .eleven{
     width: 25%;
     background-color: tomato;
+}
+.logo{
+    padding-left: 20px;
+    color: white;
+    font-size: 20px;
+}
+.nav ul{
+    margin-left: 75%;
+    list-style: none;
+    margin-top: -12px;
+    display: flex;
+}
+.nav ul li a{
+    text-decoration: none;
+    list-style: none;
+    padding-left: 30px;
+    
 }
